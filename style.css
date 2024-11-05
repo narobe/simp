@@ -83,6 +83,7 @@ a {
 .logo img{
   width:50%;
   height:60%;
+  border-radius: 1rem;
 }
 .title {
   font-size: 2.4rem;
