@@ -1,0 +1,250 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: montserrat;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --dark-yellow: #f2c841;
+  --dark: #2d2d2d;
+  --gray: #4f4f4f;
+  --purple: #966fbf;
+  --wheat: #fdffd5;
+  --cyan: #76d9d2;
+  --pink: #f397b0;
+}
+body {
+  font-family: montserrat;
+  background: url(./IMG/sprinkles.svg);
+  backdrop-filter: invert(1);
+  background-size: 900px;
+  color: var(--dark);
+  min-height: 100vh;
+}
+main {
+  background: #ffffff;
+  min-height: 100vh;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.section-title h2 {
+  font-size: 1.75rem;
+  font-weight: 900;
+  margin-top: 3rem;
+  color: var(--pink);
+}
+.section-title .amharic {
+  color: var(--cyan);
+  font-family: arada;
+  font-size: 1.4rem;
+  margin-left: 10px;
+  font-weight: 700;
+}
+.header {
+  margin-bottom: 1.5rem;
+}
+.header-wrapper {
+  position: relative;
+  z-index: 2;
+  background: var(--dark-yellow);
+}
+.header-wrapper-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header-img {
+  position: relative;
+  z-index: 1;
+}
+.header-img img {
+  width: 100%;
+  margin-top: -3px;
+}
+.logo {
+  width: 100px;
+  height: 150px;
+  background: #ffffff;
+}
+.title {
+  font-size: 2.4rem;
+}
+.title.quicksand {
+  font-family: quicksand;
+  font-weight: 700;
+}
+.title.amharic {
+  font-family: A0 Addis Abeba Unicode;
+}
+.contact-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.addresses {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.25rem;
+}
+.address {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.socials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
+  column-gap: 0.6rem;
+}
+.social {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.link-text {
+  background: var(--wheat);
+  padding: 6px;
+  border-radius: 4px;
+}
+.icon {
+  width: 1.8rem;
+}
+.address-icon {
+  width: 1.4rem;
+}
+.phones {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.packages {
+  background: url(./IMG/sprinkles.svg);
+  background-size: 500px;
+  display: grid;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.package {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 1rem;
+  overflow: hidden;
+  background: var(--wheat);
+}
+.package-img img {
+  width: 100%;
+}
+.package-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.package-name {
+  font-size: 1.25rem;
+}
+.price {
+  font-weight: 300;
+  margin: 4px;
+}
+.next-price {
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+.stars img {
+  width: 0.8rem;
+}
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-bottom: 1rem;
+}
+form {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 1rem;
+}
+form input,
+form textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid var(--dark);
+  padding: 0.6rem 0.8rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: inherit;
+}
+form input:last-child {
+  background: var(--purple);
+  border: none;
+  color: #ffffff;
+}
+.about-text {
+  font-weight: 300;
+  line-height: 1.6em;
+}
+.span-li::before {
+  content: "•";
+  font-weight: 700;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+main .menu {
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.16);
+  background: #ffffff;
+  padding-top: 0.8rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.menu-icon img {
+  height: 1.5rem;
+}
+.menu-text {
+  font-weight: 300;
+  font-size: 15px;
+}
+@media (min-width: 768px) {
+  main {
+    max-width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 360px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 330px) {
+  html {
+    font-size: 14px;
+  }
+}
